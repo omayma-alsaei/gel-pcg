@@ -18,7 +18,7 @@
 
 -  Merge and VCF files generated and normalise the merged file
 
-- Annotate with VEP tools (vep99), using the command in annotate.sh
+- Annotate with VEP tools (vep99), using the command in `annotate.sh`
 
 - Parse the annotated file using bcftools(1.11)
   
