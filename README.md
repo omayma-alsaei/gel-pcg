@@ -10,11 +10,11 @@
     
      1. Prepare coordinates of the regions of interests (ROIs), with genome assembly GRCh38 or GRCH37
 
-     2. Prepare a list of the paths for the subjects VCF files 
+     2. Prepare a list with the paths of the subjects VCF files 
 
      3. Scan the ROIs over the VCF files using the loop in scan.sh
     
-run the script as follows: `sh commands.sh file_paths.list ROIs.list directory_name`
+run the script as follows: `sh scan.sh file_paths.list ROIs.list directory_name`
 
      4. Merge and VCF files generated and normalise the merged file
 
@@ -31,15 +31,24 @@ using the command: `bcftools +split-vep -f %CHROM\t%POS\t%REF\t%ALT\t%CSQ\n' -d 
 
   In this analysis we used AnnotSV to annotate.
 
-Prior to annotation load the following modules:
+- Prepare a list with the paths of the SV files
+
+- Run the `SV_filter.sh` script to filter the structural variants files by removing variants > 10 Mb, removing the random, unknown unidentified chromosomes, and the mitochondrial chromosomes, etc. Then annotate the filtered file.
+
+- Prior to annotation load the following modules:
     
-   - bio/AnnotSV/3.1.1
+   * bio/AnnotSV/3.1.1
 
-   - bio/AnnotSV/3.1.1-BEDtools-2.3.0
+   * bio/AnnotSV/3.1.1-BEDtools-2.3.0
 
-   - bio/BCFtools/1.11-GCC-8.3.0
+   * bio/BCFtools/1.11-GCC-8.3.0
 
    then,
 
     export ANNOTSV=/resources/tools/apps/software/AnnotSV/
+
+run the script as follows: `sh SV_filter.sh SVfile_paths.list`
+
+- Filter the generated files for ROIs using `SV_analysis.r`
+
 
