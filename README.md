@@ -6,7 +6,7 @@
    
    This analysis involves two stages of data extraction and annotation: a) single nucleotide variants (SNVs) annotations using `vep99` and b) structural variants (SVs) annotatoions using `AnnotSV`.
 
-  ### 1. SNV analysis:
+### 1. SNV analysis:
     
 - Prepare the coordinates of the regions of interests (ROIs), with genome assembly GRCh38 or GRCH37
 
@@ -25,7 +25,7 @@
   using the command: `bcftools +split-vep -f %CHROM\t%POS\t%REF\t%ALT\t%CSQ\n' -d -A tab annotated_file.vcf >> output.tsv`
 
 
-  ### 2. SV analysis:
+### 2. SV analysis:
 
   Calling of GEL’s SVs was done using Manta, and CNVs using CANVAS.
 
