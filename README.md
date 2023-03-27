@@ -4,25 +4,25 @@
    
    This repo includes the scripts used for the data extraction and analysis of the GE100KGP PCG cohort.
    
-   This analysis involves two stages of data extraction and annotation: a) single nucleotide variants (SNVs) using `vep99` and b) structural variants (SVs) using `AnnotSV`.
+   This analysis involves two stages of data extraction and annotation: a) single nucleotide variants (SNVs) annotations using `vep99` and b) structural variants (SVs) annotatoions using `AnnotSV`.
 
   ### 1. SNV analysis:
     
-     1. Prepare coordinates of the regions of interests (ROIs), with genome assembly GRCh38 or GRCH37
+- Prepare the coordinates of the regions of interests (ROIs), with genome assembly GRCh38 or GRCH37
 
-     2. Prepare a list with the paths of the subjects VCF files 
+ - Prepare a list with the paths of the subjects VCF files 
 
-     3. Scan the ROIs over the VCF files using the loop in scan.sh
+ - Scan the ROIs over the VCF files using the loop in `scan.sh`
     
-run the script as follows: `sh scan.sh file_paths.list ROIs.list directory_name`
+    run the script as follows: `sh scan.sh file_paths.list ROIs.list directory_name`
 
-     4. Merge and VCF files generated and normalise the merged file
+-  Merge and VCF files generated and normalise the merged file
 
-     5. Annotate with VEP tools (vep99), using the command in annotate.sh
+- Annotate with VEP tools (vep99), using the command in annotate.sh
 
-     6. Parse the annotated file using bcftools(1.11)
-
-using the command: `bcftools +split-vep -f %CHROM\t%POS\t%REF\t%ALT\t%CSQ\n' -d -A tab annotated_file.vcf >> output.tsv`
+- Parse the annotated file using bcftools(1.11)
+  
+  using the command: `bcftools +split-vep -f %CHROM\t%POS\t%REF\t%ALT\t%CSQ\n' -d -A tab annotated_file.vcf >> output.tsv`
 
 
   ### 2. SV analysis:
@@ -45,7 +45,7 @@ using the command: `bcftools +split-vep -f %CHROM\t%POS\t%REF\t%ALT\t%CSQ\n' -d 
 
    then,
 
-    export ANNOTSV=/resources/tools/apps/software/AnnotSV/
+   * export ANNOTSV=/resources/tools/apps/software/AnnotSV/
 
 run the script as follows: `sh SV_filter.sh SVfile_paths.list`
 
