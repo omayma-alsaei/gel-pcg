@@ -49,7 +49,7 @@
 
 - Make sure you have the following as the first line of the main script `#!/usr/bin/env tclsh`
 
-run the script as follows: `sh SV_filter.sh SVfile_paths.list`
+    run the script as follows: `sh SV_filter.sh SVfile_paths.list`
 
 - Filter the generated files for ROIs using `SV_analysis.r`
 
