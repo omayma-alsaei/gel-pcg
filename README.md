@@ -6,6 +6,20 @@
    
    This analysis involves two stages of data extraction and annotation: a) single nucleotide variants (SNVs) annotations using `vep99` and b) structural variants (SVs) annotatoions using `AnnotSV`.
 
+   The glaucoma gene panel used is shown in the table below:
+
+   | ADAMTS10 | ADAMTS17 | CPAMD8  |
+   | CREBBP   | CYP1B1   | DDX58   |
+   | FOXC1    | FOXE3    | IFIH1   |
+   | LMX1B    | LTBP2    | MYOC    |
+   | OCRL     | PAX6     | PITX2   |
+   | SBF2     | SH3PXD2B | TEK     |
+   | ANGPT1   | COL1A1   | GPATCH3 |
+   | GUCA1C   | KERA     | OPA1    |
+   | PLOD2    | PXDN     | SLC4A11 |
+   | SLC4A4   | WDR36    |         |
+
+
 ### 1. SNV analysis:
     
 - Prepare the coordinates of the regions of interests (ROIs), with genome assembly GRCh38 or GRCH37
