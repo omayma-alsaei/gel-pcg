@@ -18,7 +18,16 @@
 
 -  Merge and VCF files generated and normalise the merged file
 
-- Annotate with VEP tools (vep99), using the command in `annotate.sh`
+- Annotate with VEP tools (vep99), using the command in `vep_annotate.sh`
+
+- Prior to annotation, load the following:
+
+   * module purge
+
+   * module load bio/VEP/99.1-foss-2019a-Perl-5.28.1
+
+   * export PERL5LIB=${LOFTEE38}:${PERL5LIB}
+
 
 - Parse the annotated file using bcftools(1.11)
   
@@ -35,7 +44,7 @@
 
 - Run the `SV_filter.sh` script to filter the structural variants files by removing variants > 10 Mb, removing the random, unknown unidentified chromosomes, and the mitochondrial chromosomes, etc. Then annotate the filtered file.
 
-- Prior to annotation load the following modules:
+- Prior to annotation, load the following modules:
     
    * bio/AnnotSV/3.1.1
 
@@ -51,6 +60,6 @@
 
     run the script as follows: `sh SV_filter.sh SVfile_paths.list`
 
-- Filter the generated files for ROIs using `SV_analysis.r`
+- Filter the generated files for ROIs using `SV_analysis.R`
 
 
