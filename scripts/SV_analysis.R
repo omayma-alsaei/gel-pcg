@@ -5,7 +5,7 @@ library( stringr)
 
 SV_files <- read.table("~/---PATH OF SV FILE PATHS LIST---/SV_files.list", quote=”\"", comment.char="") 
 
-PCG_genes_panel <- read.csv( "~/---PATH OF THE GENE PANEL---/PCG_gene_panel", sep="")  
+PCG_genes_panel <- read.csv( "~/---PATH OF THE GENE PANEL---/PCG_genes_panel", sep="")  
 final = data.frame() 
 
 for (i In 1:nrow(SV_files)) { 
