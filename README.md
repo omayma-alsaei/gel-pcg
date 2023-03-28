@@ -8,26 +8,17 @@
 
    The glaucoma gene panel used is shown in the table below:
 
-   |          |          |         |
-   | ADAMTS10 | ADAMTS17 | CPAMD8  |
-   |          |          |         |
-   | CREBBP   | CYP1B1   | DDX58   |
-   |          |          |         |
-   | FOXC1    | FOXE3    | IFIH1   |
-   |          |          |         |
-   | LMX1B    | LTBP2    | MYOC    |
-   |          |          |         |
-   | OCRL     | PAX6     | PITX2   |
-   |          |          |         |
-   | SBF2     | SH3PXD2B | TEK     |
-   |          |          |         |
-   | ANGPT1   | COL1A1   | GPATCH3 |
-   |          |          |         |
-   | GUCA1C   | KERA     | OPA1    |
-   |          |          |         |
-   | PLOD2    | PXDN     | SLC4A11 |
-   |          |          |         |
-   | SLC4A4   | WDR36    |         |
+|------------|------------|-----------|
+| _ADAMTS10_ | _ADAMTS17_ | _CPAMD8_  |
+| _CREBBP_   | _CYP1B1_   | _DDX58_   |
+| _FOXC1_    | _FOXE3_    | _IFIH1_   |
+| _LMX1B_    | _LTBP2_    | _MYOC_    |
+| _OCRL_     | _PAX6_     | _PITX2_   |
+| _SBF2_     | _SH3PXD2B_ | _TEK_     |
+| _ANGPT1_   | _COL1A1_   | _GPATCH3_ |
+| _GUCA1C_   | _KERA_     | _OPA1_    |
+| _PLOD2_    | _PXDN_     | _SLC4A11_ |
+| _SLC4A4_   | _WDR36_    |           |
 
 
 ### 1. SNV analysis:
