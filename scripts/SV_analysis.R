@@ -19,7 +19,7 @@ path<-paste("~/---Path of directory into which annotated file will be saved---/"
 
 cur_sample_data <- read.delim(path) 
 
-in_genelist<-cur_sample_data[cur_sample_data$Gene_name %in% PCG_gene_panel$AnnotSV_ID,]  
+in_genelist<-cur_sample_data[cur_sample_data$Gene_name %in% PCG_genes_panel$AnnotSV_ID,]  
 in_genelist <-in_genellst[which(in_genelist$Annotation_mode=="split"),] 
 
 in_genelist_split<-separate(data=in_genelist,col=Location, into = c(“loc1”,”loc2”),sep=”-“,remove = FALSE) 
