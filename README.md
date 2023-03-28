@@ -8,6 +8,7 @@
 
    The glaucoma gene panel used is shown in the table below:
 
+|            |            |           |
 |------------|------------|-----------|
 | _ADAMTS10_ | _ADAMTS17_ | _CPAMD8_  |
 | _CREBBP_   | _CYP1B1_   | _DDX58_   |
