@@ -1,6 +1,6 @@
 ## Molecular Diagnosis of Unsolved Cases in the Primary Congenital Glaucoma Cohort of the Genomics England 100,000 Genomes Project
    
-   The paper describing the study is available [here]()
+   The paper describing the study is available [here](https://pubmed.ncbi.nlm.nih.gov/38755526/)
    
    This repo includes the scripts used for the data extraction and analysis of the GE100KGP PCG cohort.
    
