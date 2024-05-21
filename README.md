@@ -16,10 +16,14 @@
    | _LMX1B_    | _LTBP2_    | _MYOC_    |
    | _OCRL_     | _PAX6_     | _PITX2_   |
    | _SBF2_     | _SH3PXD2B_ | _TEK_     |
-   | _ANGPT1_   | _COL1A1_   | _GPATCH3_ |
-   | _GUCA1C_   | _KERA_     | _OPA1_    |
-   | _PLOD2_    | _PXDN_     | _SLC4A11_ |
-   | _SLC4A4_   | _WDR36_    |           |
+   | _ANGPT1_   | _ANGPTL7_  | _COL1A1_  |
+   | _EFEMP1_   | _GJA1_     | _GLIS3_   |
+   | _GPATCH3_  | _GUCA1C_   | _KERA_    |
+   | _LRP2_     | _OPA1_     | _OPTN_    |
+   | _PIEZO1_   | _PIEZO2_   | _PLOD2_   | 
+   | _PXDN_     | _SLC4A11_  | _SLC4A4_  |
+   | _SVEP1_    | _THBS1_    | _TIE1_    |
+   | _WDR36_    |            |           |
 
 
 ### 1. SNV analysis:
